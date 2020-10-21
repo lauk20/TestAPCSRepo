@@ -50,6 +50,15 @@ public class Demo{
     return newArray;
   }
 
+  public static void printLoop(int n){
+   for (int i = 1; i <= n; i++){
+     for (int v = 0; v <= n - i; v++){
+       System.out.print(i);
+     }
+     System.out.println();
+   }
+ }
+
   public static void main(String[] args){
     int[] a = {1, 2};
     int[] b = {1, 2, 3};
@@ -70,5 +79,6 @@ public class Demo{
     System.out.println(arrayDeepToString(create2DArrayRandomized(6, 4, 4)));
     System.out.println(arrayDeepToString(create2DArrayRandomized(4,10,100)));
     System.out.println(arrayDeepToString(create2DArrayRandomized(2,10,1)));
+    printLoop(5);
   }
 }
