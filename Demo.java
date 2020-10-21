@@ -60,7 +60,7 @@ public class Demo{
  }
 
   public static void main(String[] args){
-    int[] a = {1, 2};
+    /*int[] a = {1, 2};
     int[] b = {1, 2, 3};
     int[] c = {1, 2, 3, 4};
     int[] d = {1, 2, 3 ,4 ,5};
@@ -79,6 +79,13 @@ public class Demo{
     System.out.println(arrayDeepToString(create2DArrayRandomized(6, 4, 4)));
     System.out.println(arrayDeepToString(create2DArrayRandomized(4,10,100)));
     System.out.println(arrayDeepToString(create2DArrayRandomized(2,10,1)));
-    printLoop(5);
+    printLoop(5);*/
+    if (args.length == 0){
+     printLoop(5);
+    }
+    else{
+     printLoop(Integer.parseInt(args[0]));
+    }
   }
+
 }
